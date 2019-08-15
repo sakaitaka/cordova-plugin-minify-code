@@ -1,0 +1,23 @@
+{
+    "name": "cordova-plugin-minify-code",
+    "version": "1.0.0",
+    "description": "Minify Source Code - Cordova Plugin",
+    "main": "minify_code.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sakaitaka/cordova-plugin-minify-code.git"
+    },
+    "author": "sakaitaka",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sakaitaka/cordova-plugin-minify-code/issues"
+    },
+    "homepage": "https://github.com/sakaitaka/cordova-plugin-minify-code#readme",
+    "dependencies": {
+        "gulp": "^4.0.2",
+        "gulp-minifier": "^2.0.0"
+    }
+}
