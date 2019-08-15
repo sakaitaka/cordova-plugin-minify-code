@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-minify-code",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Minify Source Code - Cordova Plugin",
     "main": "minify_code.js",
     "scripts": {
