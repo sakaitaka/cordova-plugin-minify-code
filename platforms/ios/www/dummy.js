@@ -1,0 +1,1 @@
+var dummy=function(){return!0};

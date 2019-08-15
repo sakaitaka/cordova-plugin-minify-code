@@ -4,6 +4,8 @@ module.exports = function(context) {
     var debug = require('gulp-debug');
     var platforms = context.opts.platforms;
     var projectRoot = context.opts.projectRoot;
+    console.log(platforms);
+    console.log(projectRoot);
     var path = require('path');
     var platformWWW;
     if (platforms.indexOf('ios') >= 0 || platforms.indexOf('windows') >= 0) {
@@ -28,5 +30,5 @@ module.exports = function(context) {
             minifyCSS: true
         })).pipe(gulp.dest(platformWWW))
         .pipe(debug())
-        .on('end', function() { log('cordova-plugin-minify-code: Done!'); });
+        .on('unpipe', function() { console.log('cordova-plugin-minify-code: minify success!'); });
 }
