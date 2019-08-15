@@ -6,7 +6,7 @@ module.exports = function(context) {
     var projectRoot = context.opts.projectRoot;
     var path = require('path');
     var platformWWW;
-    if (platforms.indexOf('ios') >= 0 || platforms.indexOf('windows') >= 0 || platforms.indexOf('browser') >= 0) {
+    if (platforms.indexOf('ios') >= 0 || platforms.indexOf('windows') >= 0) {
         platformWWW = path.resolve(projectRoot, 'platforms', platforms[0], 'www');
     } else if (platforms.indexOf('android') >= 0) {
         platformWWW = path.resolve(projectRoot, 'platforms', platforms[0], 'app/src/main/assets/www');
