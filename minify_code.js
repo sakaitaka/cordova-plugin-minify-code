@@ -1,6 +1,7 @@
 module.exports = function(context) {
     var gulp = require('gulp');
     var minify = require('gulp-minifier');
+    var debug = require('gulp-debug');
     var platforms = context.opts.platforms;
     var projectRoot = context.opts.projectRoot;
     var path = require('path');
@@ -13,17 +14,19 @@ module.exports = function(context) {
         console.log('ERROR: not supported platform.');
         return;
     }
-    console.log('cordova-plugin-minify-code: minifing task start...');
-    console.log('Target Directory: ' + platformWWW);
+    console.log('cordova-plugin-minify-code: Minify Target Directory: ' + platformWWW);
+    console.log('cordova-plugin-minify-code: Task Start...');
     gulp.src(platformWWW + '/**/*').pipe(minify({
-        minify: true,
-        minifyHTML: {
-            collapseWhitespace: true,
-            conservativeCollapse: true,
-        },
-        minifyJS: {
-            sourceMap: false
-        },
-        minifyCSS: true
-    })).pipe(gulp.dest(platformWWW));
-};
+            minify: true,
+            minifyHTML: {
+                collapseWhitespace: true,
+                conservativeCollapse: true,
+            },
+            minifyJS: {
+                sourceMap: false
+            },
+            minifyCSS: true
+        })).pipe(gulp.dest(platformWWW))
+        .pipe(debug())
+        .on('end', function() { log('cordova-plugin-minify-code: Done!'); });
+}
