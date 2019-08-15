@@ -9,7 +9,8 @@ $ cordova plugin add cordova-plugin-minify-code
   
 # Usage
   
-Minify is executed when the project is built.
+1. Install this plugin in the Cordova project.  
+2. The plugin will minify the source code at build time.  
   
 # Platforms
 
