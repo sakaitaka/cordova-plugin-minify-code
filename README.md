@@ -1,6 +1,6 @@
 # cordova-plugin-minify-code
   
-https://travis-ci.org/sakaitaka/cordova-plugin-minify-code.svg?branch=master
+<img src='https://travis-ci.org/sakaitaka/cordova-plugin-minify-code.svg?branch=master' title='Travis CI', alt='build pass' />
 
 # Install
 
