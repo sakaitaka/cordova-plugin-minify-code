@@ -1,9 +1,9 @@
 # cordova-plugin-minify-code
-Minify Source Code - Cordova Plugin
+rm
   
 
 # Install
 
 ```
-$ cordova plugin add https://github.com/sakaitaka/cordova-plugin-minify-code.git
+$ cordova plugin add cordova-plugin-minify-code
 ```
