@@ -17,6 +17,10 @@ $ cordova plugin add cordova-plugin-minify-code
 ```
 ios, android, windows
 ```
+
+# Require Module
+  
+Dependency npm package: gulp, gulp-debug, gulp-minifier
   
 # License
   
