@@ -20,7 +20,11 @@ ios, android, windows
 
 # Require Module
   
-Dependency npm package: gulp, gulp-debug, gulp-minifier
+Dependency NPM Packages:
+  
+```
+gulp, gulp-debug, gulp-minifier
+```
   
 # License
   

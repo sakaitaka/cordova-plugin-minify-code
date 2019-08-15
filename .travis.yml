@@ -1,1 +1,5 @@
-cache: npm
+language: node_js
+node_js:
+- 12.8.0
+script:
+- npm cache
