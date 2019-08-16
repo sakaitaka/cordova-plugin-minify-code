@@ -1,6 +1,8 @@
 # cordova-plugin-minify-code
   
 ![Travis CI](https://travis-ci.org/sakaitaka/cordova-plugin-minify-code.svg?branch=master "build pass")
+  
+The plugin minify the source code at build time.
 
 # Install
 
