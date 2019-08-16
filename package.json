@@ -10,6 +10,13 @@
         "type": "git",
         "url": "git+https://github.com/sakaitaka/cordova-plugin-minify-code.git"
     },
+    "keywords": [
+        "cordova",
+        "ionic",
+        "monaca",
+        "minify",
+        "plugin"
+    ],
     "author": "sakaitaka",
     "license": "MIT",
     "bugs": {
