@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-minify-code",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Minify Source Code - Cordova Plugin",
     "main": "minify_code.js",
     "scripts": {
@@ -12,11 +12,9 @@
     },
     "keywords": [
 	"ecosystem:cordova",
-        "cordova",
-        "ionic",
-        "monaca",
-        "minify",
-        "plugin"
+    	"cordova-android",
+    	"cordova-ios",
+	"cordova-windows"    
     ],
     "author": "sakaitaka",
     "license": "MIT",

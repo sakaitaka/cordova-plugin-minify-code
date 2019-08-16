@@ -4,8 +4,6 @@ module.exports = function(context) {
     var debug = require('gulp-debug');
     var platforms = context.opts.platforms;
     var projectRoot = context.opts.projectRoot;
-    console.log(platforms);
-    console.log(projectRoot);
     var path = require('path');
     var platformWWW;
     if (platforms.indexOf('ios') >= 0 || platforms.indexOf('windows') >= 0) {
