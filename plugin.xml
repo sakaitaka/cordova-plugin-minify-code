@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-minify-code" version="1.0.5" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-minify-code" version="1.0.6" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-plugin-minifty-code</name>
     <description>The plugin will minify the source code at build time.</description>
     <author>sakaitaka</author>
     <license>MIT</license>
     <hook type="after_prepare" src="minify_code.js"/>
+    <hook type="before_compile" src="minify_code.js"/>
     <engines>
         <engine name="cordova" version=">=7.1.0" />
     </engines>

@@ -16,8 +16,6 @@ var context_windows = {
         projectRoot: __dirname.slice(0, -5)
     }
 };
-require('../minify_code')(context_ios).then(function() {
-    require('../minify_code')(context_android).then(function() {
-        require('../minify_code')(context_windows);
-    });
-});
+require('../minify_code')(context_ios);
+require('../minify_code')(context_android);
+require('../minify_code')(context_windows);
