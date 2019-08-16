@@ -18,17 +18,22 @@ module.exports = function(context) {
     }
     console.log('cordova-plugin-minify-code: Minify Target Directory: ' + platformWWW);
     console.log('cordova-plugin-minify-code: Task Start...');
-    gulp.src(platformWWW + '/**/*').pipe(minify({
-            minify: true,
-            minifyHTML: {
-                collapseWhitespace: true,
-                conservativeCollapse: true,
-            },
-            minifyJS: {
-                sourceMap: false
-            },
-            minifyCSS: true
-        })).pipe(gulp.dest(platformWWW))
-        .pipe(debug())
-        .on('unpipe', function() { console.log('cordova-plugin-minify-code: minify success!'); });
+    return new Promise(function(resolve) {
+        gulp.src(platformWWW + '/**/*').pipe(minify({
+                minify: true,
+                minifyHTML: {
+                    collapseWhitespace: true,
+                    conservativeCollapse: true,
+                },
+                minifyJS: {
+                    sourceMap: false
+                },
+                minifyCSS: true
+            })).pipe(gulp.dest(platformWWW))
+            .pipe(debug())
+            .on('unpipe', function() {
+                console.log('cordova-plugin-minify-code: minify success!');
+                resolve(resolve);
+            });
+    });
 }
