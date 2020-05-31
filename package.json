@@ -23,9 +23,9 @@
     },
     "homepage": "https://github.com/sakaitaka/cordova-plugin-minify-code#readme",
     "dependencies": {
-        "gulp": "^4.0.2",
+        "gulp": "4.0.0",
         "gulp-debug": "^4.0.0",
-        "gulp-minifier": "3.5.0"
+        "gulp-minifier": "^3.5.0"
     },
     "devDependencies": {
         "kind-of": ">=6.0.3"
