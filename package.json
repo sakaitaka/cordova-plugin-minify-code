@@ -25,7 +25,9 @@
     "dependencies": {
         "gulp": "^4.0.2",
         "gulp-debug": "^4.0.0",
-        "gulp-minifier": "^2.0.0",
+        "gulp-minifier": "^2.0.0"
+    },
+    "devDependencies": {
         "kind-of": ">=6.0.3"
     }
 }
